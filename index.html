@@ -1,80 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Time tracking dashboard</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dashboard</title>
 </head>
 <body>
+     <div class="container">
+        <div class="grid-column">
+            <div class="profile-background">
+                <div class="profile">
+                    <img src="image-jeremy.png">
+                    <div class="mobile">
+                        <p>Report for</p>
+                        <h3>Jeremy <br>Robson</br></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="profile-bottom">
+                <div class="timeframe-button">
+                <div class="dates">
+                    <span id="daily" class="inactive">Daily</span>
+                    <span id="weekly" class="inactive">Weekly</span>
+                    <span id="monthly" class="inactive">Monthly</span>
+                    </div>
+                    <div class="data"></div>
+                    </div>
+            </div>
+            <div class="columns">
+                <div class="border-top">
+                    <img src="icon-work.svg">
+                </div>
+                <div class="work">
+                    <div class="flex">
+                        <h4 class="title">Work</h4>
+                        <img src="icon-ellipsis.svg">
+                    </div>
+                    <div class="flex2-mobile">
+                        <p class="current-hour">32hrs</p>
+                        <span class="previous-hour">Last Week - 36hrs</span>
+                    </div>
+                </div>
+            </div>
 
-  Report for
-  Jeremy Robson
+            <div class="columns">
+                <div class="border-top-play">
+                    <img src="icon-play.svg">
+                </div>
+                <div class="play">
+                    <div class="flex">
+                        <h4 class="title">Play</h4>
+                        <img src="icon-ellipsis.svg">
+                    </div>
+                    <div class="flex2-mobile">
+                        <p class="current-hour">10hrs</p>
+                        <span class="previous-hour">Last Week - 8hrs</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="columns">
+                <div class="border-top-study">
+                    <img src="icon-study.svg">
+                </div>
+                <div class="study">
+                    <div class="flex">
+                        <h4 class="title">Study</h4>
+                        <img src="icon-ellipsis.svg">
+                    </div>
+                    <div class="flex2-mobile">
+                        <p class="current-hour">4hrs</p>
+                        <span class="previous-hour">Last Week - 7hrs</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="columns">
+                <div class="border-top-exercise">
+                    <img src="icon-exercise.svg">
+                </div>
+                <div class="exercise">
+                    <div class="flex">
+                        <h4 class="title">Exercise</h4>
+                        <img src="icon-ellipsis.svg">
+                    </div>
+                    <div class="flex2-mobile">
+                        <p class="current-hour">4hrs</p>
+                        <span class="previous-hour">Last Week - 5hrs</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="columns">
+                <div class="border-top-social">
+                    <img src="icon-social.svg">
+                </div>
+                <div class="social">
+                    <div class="flex">
+                        <h4 class="title">Social</h4>
+                        <img src="icon-ellipsis.svg">
+                    </div>
+                    <div class="flex2-mobile">
+                        <p class="current-hour">5hrs</p>
+                        <span class="previous-hour">Last Week - 10hrs</span>
+                    </div>
+                </div>
+            </div>
 
-  Daily
-  Weekly
-  Monthly
+            <div class="columns">
+                <div class="border-top-selfcare">
+                    <img src="icon-self-care.svg">
+                </div>
+                <div class="self-care">
+                    <div class="flex">
+                        <h4 class="title">Self Care</h4>
+                        <img src="icon-ellipsis.svg">
+                    </div>
+                    <div class="flex2-mobile">
+                        <p class="current-hour">2hrs</p>
+                        <span class="previous-hour">Last Week - 2hrs</span>
+                    </div>
+                </div>
+            </div>
 
-  Work
-  5hrs <!-- daily -->
-  Previous - 7hrs <!-- daily -->
-  32hrs <!-- weekly -->
-  Previous - 36hrs <!-- weekly -->
-  103hrs <!-- monthly -->
-  Previous - 128hrs <!-- monthly -->
-
-  Play
-  1hr <!-- daily -->
-  Previous - 2hrs <!-- daily -->
-  10hrs <!-- weekly -->
-  Previous - 8hrs <!-- weekly -->
-  23hrs <!-- monthly -->
-  Previous - 29hrs <!-- monthly -->
-
-  Study
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 7hrs <!-- weekly -->
-  13hrs <!-- monthly -->
-  Previous - 19hrs <!-- monthly -->
-
-  Exercise
-  1hr <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 5hrs <!-- weekly -->
-  11hrs <!-- monthly -->
-  Previous - 18hrs <!-- monthly -->
-
-  Social
-  1hr <!-- daily -->
-  Previous - 3hrs <!-- daily -->
-  5hrs <!-- weekly -->
-  Previous - 10hrs <!-- weekly -->
-  21hrs <!-- monthly -->
-  Previous - 23hrs <!-- monthly -->
-
-  Self Care
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  2hrs <!-- weekly -->
-  Previous - 2hrs <!-- weekly -->
-  7hrs <!-- monthly -->
-  Previous - 11hrs <!-- monthly -->
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+        </div>
+     </div>
+    
 </body>
+<script src="index.js"></script>
 </html>
